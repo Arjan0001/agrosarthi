@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', function() {
             formData.append('language', apiLanguage);
             formData.append('file', blob, 'image.jpg');
 
-            const response = await fetch('https://api-endpoint-here/predict-disease/', {
+            const response = await fetch('https://pylord-agrosarthi.hf.space/predict-disease/', {
                 method: 'POST',
                 body: formData
             });
