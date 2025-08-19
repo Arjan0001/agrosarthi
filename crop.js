@@ -387,7 +387,7 @@ async function fetchFarmDataFromAPI(latitude, longitude, elevation) {
         });
         
         // Call soil estimate API with GET request
-        const response = await fetch(`https://api-endpoint-here/soil-estimate?${queryParams}`, {
+        const response = await fetch(`https://pylord-agrosarthi.hf.space/soil-estimate?${queryParams}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -507,7 +507,7 @@ async function getCropRecommendationsFromAPI(formData) {
         };
 
         // Call crop prediction API
-        const response = await fetch('https://api-endpoint-here/predict/', {
+        const response = await fetch('https://pylord-agrosarthi.hf.space/predict/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
