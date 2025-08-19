@@ -114,7 +114,7 @@ function initReminderModal() {
                     }))
                 };
 
-                const response = await fetch('http://127.0.0.1:8000/set-crop-reminders', {
+                const response = await fetch('https://pylord-agrosarthi.hf.space/set-crop-reminders', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(reminderPayload)
@@ -299,7 +299,7 @@ async function handleViewCropPlan(cropName) {
     const loadingModal = showLoadingModal(`Generating crop plan for ${cropName}...`);
 
     try {
-        const response = await fetch('https://api-endpoint-here/generate-crop-plan', {
+        const response = await fetch('https://pylord-agrosarthi.hf.space/generate-crop-plan', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
