@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     try {
-      const response = await fetch('https://api-endpoint-here/predict-yield/', {
+      const response = await fetch('https://pylord-agrosarthi.hf.space/predict-yield/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
