@@ -150,7 +150,7 @@ async function getWeather() {
 
     const language = getGlobalLanguage(); // Use global language from script.js
 
-    const url = `https://api-ednpoint-here/weather-forecast?lat=${lat}&lon=${lon}&language=${language}`;
+    const url = `https://pylord-agrosarthi.hf.space/weather-forecast?lat=${lat}&lon=${lon}&language=${language}`;
     const response = await fetch(url);
 
     if (!response.ok) throw new Error('Failed to fetch weather data');
