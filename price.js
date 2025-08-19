@@ -290,7 +290,7 @@ async function estimatePrice() {
 
     try {
         showLoading();
-        const response = await fetch('https://api-ednpoint-here/predict-price/', {
+        const response = await fetch('https://pylord-agrosarthi.hf.space/predict-price/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
