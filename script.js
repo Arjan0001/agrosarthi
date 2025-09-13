@@ -33,7 +33,7 @@ const features = [
         descriptionKey: 'feature_chatbot_desc',
         link: 'chatbot.html'
     },
-    {
+ /*  {
         icon: 'fa-cloud-sun-rain',
         title: 'Smart Weather',
         titleKey: 'feature_weather_title',
@@ -56,7 +56,7 @@ const features = [
         description: 'Estimate your harvest yield based on current conditions and farming practices.',
         descriptionKey: 'feature_yield_desc',
         link: 'yield.html'
-    },
+    }, */
     {
     icon: 'fa-phone-volume',
     title: 'Voice Call Assistant',
