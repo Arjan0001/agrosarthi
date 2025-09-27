@@ -507,7 +507,7 @@ async function getCropRecommendationsFromAPI(formData) {
         };
 
         // Call crop prediction API
-        const response = await fetch('https://pylord-agrosarthi.hf.space/predict/', {
+        const response = await fetch('https://pylord-agrosarthi-v1.hf.space/api/v1/crops/predict', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
