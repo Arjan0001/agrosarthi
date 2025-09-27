@@ -387,7 +387,7 @@ async function fetchFarmDataFromAPI(latitude, longitude, elevation) {
         });
         
         // Call soil estimate API with GET request
-        const response = await fetch(`https://pylord-agrosarthi.hf.space/soil-estimate?${queryParams}`, {
+        const response = await fetch(`https://pylord-agrosarthi-v1.hf.space/api/v1/soil/estimate?${queryParams}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
