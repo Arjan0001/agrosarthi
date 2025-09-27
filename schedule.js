@@ -299,7 +299,7 @@ async function handleViewCropPlan(cropName) {
     const loadingModal = showLoadingModal(`Generating crop plan for ${cropName}...`);
 
     try {
-        const response = await fetch('https://pylord-agrosarthi.hf.space/generate-crop-plan', {
+        const response = await fetch('https://pylord-agrosarthi-v1.hf.space/api/v1/crops/plan', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
