@@ -114,7 +114,7 @@ function initReminderModal() {
                     }))
                 };
 
-                const response = await fetch('https://pylord-agrosarthi.hf.space/set-crop-reminders', {
+                const response = await fetch('https://pylord-agrosarthi-v1.hf.space/api/v1/crops/plan', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(reminderPayload)
