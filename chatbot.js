@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
         const lang = getGlobalLanguage(); // Get selected global language
 
-        const res = await fetch("https://pylord-agrosarthi.hf.space/query/", {
+        const res = await fetch("https://pylord-agrosarthi-v1.hf.space/api/v1/chat/query", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ query: `${text} [lang=${lang}]` })
